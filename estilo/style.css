@@ -9,7 +9,7 @@
     --cor01:black;
     --cor02:white;
 
-    --fonte-titulo: "Passion One", sans-serif;
+    --fonte-titulo: "Passion One", cursive;
     --fonte-poema: "Sriracha", cursive;
     --fonte-padrao: Verdana;
 }
@@ -21,6 +21,7 @@
 
 body{
     background-color: var(--cor02);
+    height: 98vh;
 }
 
 header{
@@ -67,7 +68,14 @@ section.semimagem p{
     font-size: 26px;
 }
 
-section.comimagem{
-    background-image: url('imagens/background001.jpg');
+section.comimagem p{
+    font-family: var(--fonte-poema);
+    font-size: 26px;
+}
+
+
+section#imagem1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
 }
 
