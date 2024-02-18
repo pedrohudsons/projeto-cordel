@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
 
     --cor01:black;
     --cor02:white;
 
-    --fonte-titulo: "Passion One", cursive;
-    --fonte-poema: "Sriracha", cursive;
+    --fonte-titulo: "Noto Sans", sans-serif;
+    --fonte-poema: "Borel", cursive;
     --fonte-padrao: Verdana;
 }
 
@@ -19,63 +19,68 @@
     padding: 0px;
 }
 
-body{
-    background-color: var(--cor02);
-    height: 98vh;
+html , body{
+    background-color: gray;
+    min-height: 100vh;
+    font-family: var(--fonte-padrao);
 }
 
 header{
-    background-color: var(--cor01);
-    min-height: 150px;
+    background-color: black;
+    color: var(--cor02);
     text-align: center;
 }
 
 header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: var(--fonte-titulo);
-    color: var(--cor02);
-    font-size: 76px;
-    padding: 50px 50px 0px 50px;
-    font-weight: bold;
+    font-size: 10vw;
 }
 
 header p{
-    color: var(--cor02);
+    padding-bottom: 50px;
     font-family: var(--fonte-padrao);
-    padding: 0px 45px 45px 45px;
 }
 
-header a{
-    color: var(--cor02);
-    font-family: var(--fonte-padrao);
-    font-weight: bolder;
+a{
     text-decoration: none;
+    color: var(--cor02);
+    font-weight: bolder;
 }
 
-header a:hover{
+a:hover{
     text-decoration: underline;
 }
 
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-poema);
+    font-size: 3vw;
+}
+
 section.semimagem{
-    background-color: white;
-    padding: 50px 20px;
-    margin: 5px;
-    min-width: 300px;
-    max-width: 800px;
+    background-color: var(--cor02);
+    color: var(--cor01);
 }
 
-section.semimagem p{
-    font-family: var(--fonte-poema);
-    font-size: 26px;
+section.comimagem{
+    background-color: rgb(51, 51, 51);
+    color: var(--cor02);
 }
 
-section.comimagem p{
-    font-family: var(--fonte-poema);
-    font-size: 26px;
+section.comimagem p {
+    background-color: rgba(0, 0, 0, 0.253);
+    display: inline-block;
+    padding: 10px;
 }
 
-
-section#imagem1{
-    background-image: url('../imagens/background001.jpg');
-    background-position: right center;
+footer{
+    background-color: var(--cor01);
+    text-align: center;
+    color: var(--cor02);
+    padding: 10px;
 }
-
