@@ -23,6 +23,8 @@ html , body{
     background-color: gray;
     min-height: 100vh;
     font-family: var(--fonte-padrao);
+    min-height: 300px;
+    max-width: 900px;
 }
 
 header{
